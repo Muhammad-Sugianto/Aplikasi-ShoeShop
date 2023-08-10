@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/style.css">
+    <title>ini halaman produk</title>
+</head>
+<body>
+    
+    <div class="container">
+        <div class="product">
+            <img src="./img/sepatu compas.jpg" alt="">
+            <h3>Sepatu Compas</h3>
+            <p>Rp 390.000</p>
+            <a href="/detail_compas.html"><button class="detail-btn">Detail Produk</button></a>
+            <a href="/checkout_compas.html"><button class="checkout-btn">Checkout</button></a>
+        </div>
+        
+        <div class="product">
+            <img src="./img/sepatu jordan.jpg" alt="">
+            <h3>Sepatu Jordan</h3>
+            <p>Rp 1.500.000</p>
+            <a href="/beli_jordan.html"><button class="detail-btn">Beli Sekarang</button></a>
+            <button class="detail-btn" onclick="openModal('Compas')">Detail Produk</button>
+            <a href="/checkout_jordan.html"><button class="checkout-btn">Checkout</button></a>
+        </div>
+        
+        <div class="product">
+            <img src="./img/sepatu aero street.jpeg" alt="">
+            <h3>Sepatu AeroStreet</h3>
+            <p>Rp 450.000</p>
+            <a href="/detail_aero.html"><button class="detail-btn">Detail Produk</button></a>
+            <a href="/checkout_aero.html"><button class="checkout-btn">Checkout</button></a>
+        </div>
+        
+        <div class="product">
+            <img src="./img/sepatu patrobas.jpeg" alt="">
+            <h3>Sepatu Patrobas X Evos</h3>
+            <p>Rp 700.000</p>
+            <a href="/detail_patrobas.html"><button class="detail-btn">Detail Produk</button></a>
+            <a href="/checkout_patrobas.html"><button class="checkout-btn">Checkout</button></a>
+        </div>
+    </div>
+     <!-- Modal -->
+      
+      <div class="modal" id="productModal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <h3 id="modalTitle"></h3>
+            <img id="modalImage" src="/img/sepatu jordan.jpg    " alt="">
+            <p id="modalPrice"></p>
+        </div>
+    </div>
+    <!-- <script src="script.js"></script> -->
+</body>
+</html>
+
+
