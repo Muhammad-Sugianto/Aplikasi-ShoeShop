@@ -1,34 +1,285 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <link rel="stylesheet" href="css/style.css">
-</head>
-<body>
-    <header>
-        <div id="menu-bar" class="fa fa-bars"></div>
-        <a href="#" class="logo">ShoeShop</a>
-        <nav class="navbar">
-            <a href="/home.html">Home</a>
-            <a href="/about.html">About</a>
-            <a href="/produk.html">Product</a>
-            <a href="#blog">blog</a>
-            <a href="#news">news</a>
-        </nav>  
 
-        
-        <div class="icons">
-            <a href="#"><i class="fa fa-heart"></i></a>
-            <a href="#"><i class="fa fa-shopping-cart"></i></a>
-            <a href="#"><i class="fa fa-user"></i></a>
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ShoeShop</title>
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,300;0,400;0,700;1,700&display=swap"
+    rel="stylesheet">
+
+  <!-- Feather Icons -->
+  <script src="https://unpkg.com/feather-icons"></script>
+
+  <!-- My Style -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+  <!-- Navbar start -->
+ 
+  <nav class="navbar">
+    <div class="logo">
+        <img src="img/icons/logo.png" alt="Logo" width="200px">
+    </div>
+    <!-- <a href="#" class="navbar-logo">kenangan<span>senja</span>.</a> -->
+
+    <div class="navbar-nav">
+      <a href="/index.html">Home</a>
+      <a href="/about.html">Tentang Kami</a>
+      <a href="/product.html">Produk</a>
+      <a href="/contact.html">Kontak</a>
+    </div>
+
+    <div class="navbar-extra">
+      <a href="#" id="search-button"><i data-feather="search"></i></a>
+      <a href="#" id="shopping-cart-button"><i data-feather="shopping-cart"></i></a>
+      <a href="#" id="hamburger-menu"><i data-feather="menu"></i></a>
+    </div>
+
+    <!-- Search Form start -->
+    <div class="search-form">
+      <input type="search" id="search-box" placeholder="search here...">
+      <label for="search-box"><i data-feather="search"></i></label>
+    </div>
+    <!-- Search Form end -->
+
+    <!-- Shopping Cart start -->
+    <div class="shopping-cart">
+      <div class="cart-item">
+        <img src="img/products/1.jpg" alt="Product 1">
+        <div class="item-detail">
+          <h3>Product 1</h3>
+          <div class="item-price">IDR 30K</div>
         </div>
-    </header>
-   
-    
-<script src="js/script.js"></script>
+        <i data-feather="trash-2" class="remove-item"></i>
+      </div>
+      <div class="cart-item">
+        <img src="img/products/1.jpg" alt="Product 1">
+        <div class="item-detail">
+          <h3>Product 1</h3>
+          <div class="item-price">IDR 30K</div>
+        </div>
+        <i data-feather="trash-2" class="remove-item"></i>
+      </div>
+      <div class="cart-item">
+        <img src="img/products/1.jpg" alt="Product 1">
+        <div class="item-detail">
+          <h3>Product 1</h3>
+          <div class="item-price">IDR 30K</div>
+        </div>
+        <i data-feather="trash-2" class="remove-item"></i>
+      </div>
+    </div>
+    <!-- Shopping Cart end -->
+
+  </nav>
+  <!-- Navbar end -->
+
+   <!-- Card Section start -->
+ 
+
+  <!-- Card Section end -->
+
+  <!-- About Section start -->
+  <section id="about" class="about">
+    <h2><span>Tentang</span> Kami</h2>
+
+    <div class="row">
+      <div class="about-img">
+        <img src="/img/icons/bg.png" alt="Tentang Kami">
+      </div>
+      <div class="content">
+        <h3>Kenapa memilih Toko Kami?</h3>
+        <p>ShoeShop adalah toko yang menjual berbagai jenis sepatu,  dengan tujuan memberikan pelanggan akses kepada pilihan sepatu yang sesuai dengan gaya, kebutuhan, dan preferensi mereka. Toko ini menawarkan kategori sepatu seperti olahraga, kasual, formal,  dan sepatu untuk wanita, pria, serta anak-anak. </p>
+        <p>Selain sepatu, ShoeShop juga mungkin menyediakan aksesori sepatu dan layanan seperti saran gaya, dan penjelasan tentang teknologi desain terbaru. Tersedia pula toko online untuk kemudahan berbelanja. Karakteristik dan isi toko dapat bervariasi tergantung merek, lokasi, dan pasar yang dituju.
+
+        </p>
+      </div>
+    </div>
+  </section>
+  <!-- About Section end -->
+
+
+
+  <!-- Products Section start -->
+  <section class="products" id="products">
+    <h2><span>Produk </span> Kami</h2>
+    <!-- <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo unde eum, ab fuga possimus iste.</p> -->
+
+    <div class="row">
+      <div class="product-card">
+        <div class="product-image">
+          <img src="img/product/jordan.png" alt="">
+        </div>
+        <div class="product-content">
+          <h3>sepatu jordan</h3>
+          <div class="product-stars">
+            <i data-feather="star" class="star-full"></i>
+            <i data-feather="star" class="star-full"></i>
+            <i data-feather="star" class="star-full"></i>
+            <i data-feather="star" class="star-full"></i>
+            <i data-feather="star"></i>
+          </div>
+          <div class="product-icons">
+            <a href="#"><i data-feather="shopping-cart"></i></a>
+            <a href="#" class="item-detail-button"><i data-feather="eye"></i></a>
+          </div>
+        
+        </div>
+      </div>
+      <div class="product-card">
+        <div class="product-image">
+          <img src="img/product/compas.png" alt="">
+        </div>
+        <div class="product-content">
+          <h3>Sepatu Compas</h3>
+          <div class="product-stars">
+            <i data-feather="star"></i>
+            <i data-feather="star"></i>
+            <i data-feather="star"></i>
+            <i data-feather="star"></i>
+            <i data-feather="star"></i>
+          </div>
+          <div class="product-icons">
+            <a href="#"><i data-feather="shopping-cart"></i></a>
+            <a href="#" class="item-detail-button"><i data-feather="eye"></i></a>
+          </div>
+        
+        </div>
+      </div>
+      <div class="product-card">
+        <div class="product-image">
+          <img src="img/product/patrobas.png" alt="">
+        </div>
+        <div class="product-content">
+          <h3>Sepatu Patrobas</h3>
+          <div class="product-stars">
+            <i data-feather="star"></i>
+            <i data-feather="star"></i>
+            <i data-feather="star"></i>
+            <i data-feather="star"></i>
+            <i data-feather="star"></i>
+          </div>
+          <div class="product-icons">
+            <a href="#"><i data-feather="shopping-cart"></i></a>
+            <a href="#" class="item-detail-button"><i data-feather="eye"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="product-card">
+        <div class="product-image">
+          <img src="img/product/aero street.png" alt="">
+        </div>
+        <div class="product-content">
+          <h3>Sepatu Aero Street</h3>
+          <div class="product-stars">
+            <i data-feather="star"></i>
+            <i data-feather="star"></i>
+            <i data-feather="star"></i>
+            <i data-feather="star"></i>
+            <i data-feather="star"></i>
+          </div>
+          <div class="product-icons">
+            <a href="#"><i data-feather="shopping-cart"></i></a>
+            <a href="#" class="item-detail-button"><i data-feather="eye"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Products Section end -->
+
+  <!-- Contact Section start -->
+  <section id="contact" class="contact">
+    <h2><span>Kontak</span> Kami</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis, provident.
+    </p>
+
+    <div class="row">
+      <iframe
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d226.07884055425737!2d113.490665!3d-8.187605!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zOeKduKfvvIExMDPCsDIzjA!5e0!3m2!1sen!2sus!4v1672408575523!5m2!1sen!2sus"
+      allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="map"></iframe>
+  
+      
+      <form action="">
+        <div class="input-group">
+          <i data-feather="user"></i>
+          <input type="text" placeholder="nama">
+        </div>
+        <div class="input-group">
+          <i data-feather="mail"></i>
+          <input type="email" placeholder="email">
+        </div>
+        <div class="input-group">   
+          <i data-feather="phone"></i>
+          <input type="text" placeholder="no hp">
+        </div>
+        <button type="submit" class="btn">kirim pesan</button>
+      </form>
+
+    </div>
+  </section>
+  <!-- Contact Section end -->
+
+  <!-- Footer start -->
+  <footer>
+    <div class="socials">
+      <a href="https://www.instagram.com/im.mhmd04/"><i data-feather="instagram"></i></a>
+      <a href="https://github.com/Muhammad-Sugianto"><i data-feather="github"></i></a>
+      <a href="#"><i data-feather="facebook"></i></a>
+    </div>
+
+    <div class="links">
+      <a href="/home.html">Home</a>
+      <a href="/about.html">Tentang Kami</a>
+      <a href="/contact">Kontak</a>
+    </div>
+
+    <div class="credit">
+      <p>Created by <a href="">Muhammad Sugian</a>. | &copy; 2023.</p>
+    </div>
+  </footer>
+  <!-- Footer end -->
+
+  <!-- Modal Box Item Detail start -->
+  <div class="modal" id="item-detail-modal">
+    <div class="modal-container">
+      <a href="#" class="close-icon"><i data-feather="x"></i></a>
+      <div class="modal-content">
+        <img src="img/products/1.jpg" alt="Product 1">
+        <div class="product-content">
+          <h3>Product 1</h3>
+          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Provident, tenetur cupiditate facilis obcaecati
+            ullam maiores minima quos perspiciatis similique itaque, esse rerum eius repellendus voluptatibus!</p>
+          <div class="product-stars">
+            <i data-feather="star" class="star-full"></i>
+            <i data-feather="star" class="star-full"></i>
+            <i data-feather="star" class="star-full"></i>
+            <i data-feather="star" class="star-full"></i>
+            <i data-feather="star"></i>
+          </div>
+          <div class="product-price">IDR 30K <span>IDR 55K</span></div>
+          <a href="#"><i data-feather="shopping-cart"></i> <span>add to cart</span></a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Modal Box Item Detail end -->
+
+  <!-- Feather Icons -->
+  <script>
+    feather.replace()
+  </script>
+
+  <!-- My Javascript -->
+  <script src="js/script.js"></script>
 </body>
+
 </html>
